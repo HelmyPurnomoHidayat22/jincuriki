@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Pendaftaran</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .header img {
+            max-width: 100px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .header p {
+            margin: 0;
+            font-size: 14px;
+        }
+        .form-table {
+            width: 100%;
+            margin-top: 20px;
+        }
+        .form-table th, .form-table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .form-table th {
+            background-color: #f8f8f8;
+        }
+        .form-table td {
+            vertical-align: middle;
+        }
+        .foto img {
+            max-width: 150px;
+            height: auto;
+        }
+        .signature {
+            margin-top: 50px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="K.jpeg" alt="Logo">
+            <h1>Kartu Ujian Sma Jincuriki</h1>
+            <p>Pemerintah Daerah Provinsi Konoha</p>
+            <p>Dinas Pendidikan dan Kebudayaan</p>
+            <p></p>
+            <p>_________________________________________________________________</p>
+            <p>SMA JINCURIKI</p>
+        </div>
+        <table class="table form-table">
+            <tr>
+                <th>Nama:</th>
+                <td>{{ nama }}</td>
+            </tr>
+            <tr>
+                <th>NISN:</th>
+                <td>{{ nisn }}</td>
+            </tr>
+            <tr>
+                <th>Alamat:</th>
+                <td>{{ alamat }}</td>
+            </tr>
+            <tr>
+                <th>Asal Sekolah:</th>
+                <td>{{ asal_sekolah }}</td>
+            </tr>
+            <tr>
+                <th>Nama Orang Tua:</th>
+                <td>{{ nama_ortu }}</td>
+            </tr>
+            <tr>
+                <th>Pekerjaan Orang Tua:</th>
+                <td>{{ pekerjaan_ortu }}</td>
+            </tr>
+            <tr>
+                <th>No Telepon:</th>
+                <td>{{ telepon }}</td>
+            </tr>
+            <tr>
+                <th>Nilai Rapot:</th>
+                <td>{{ nilai_rapot }}</td>
+            </tr>
+            <tr>
+                <th>Foto:</th>
+                <td class="foto">
+                    <img src="{{ foto }}" alt="Foto">
+                </td>
+            </tr>
+        </table>
+        <div class="signature">
+            <p>______________, ___________________</p>
+            <p>TTD Orang Tua</p>
+        </div>
+    </div>
+</body>
+</html>
